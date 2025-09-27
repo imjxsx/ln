@@ -1,0 +1,21 @@
+{
+  "name": "ln",
+  "description": "",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "author": "imjxsx",
+  "packageManager": "pnpm@10.17.1",
+  "devDependencies": {
+    "@types/node": "20.0.0",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "logger": "github:imjxsx/logger"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

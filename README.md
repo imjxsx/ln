@@ -1,33 +1,36 @@
-<h1 align="center">🌍 ln (v1.0.0)</h1>
-<p align="center">A simple multi-language (i18n) system inspired by Minecraft, built with TypeScript.</p>
-<p align="center">Load language files, manage placeholders, and translate your app with ease.</p>
+# 🌎 @imjxsx/ln (v1.0.2)
 
-<h2>📥 Install</h2>
-<h3>- PNPM</h3>
+## A simple and lightweight multilingual (i18n) system built with TypeScript
 
-```bash
-pnpm add github:imjxsx/ln
-```
+### 📥 Installation
 
-<h3>- NPM</h3>
+---
 
+#### - With NPM
 
 ```bash
-npm install github:imjxsx/ln
+npm install @imjxsx/ln
 ```
 
-<h3>- YARN</h3>
+#### - With PNPM
 
 ```bash
-yarn add github:imjxsx/ln
+pnpm add @imjxsx/ln
 ```
 
-<h2>🚀 Usage</h2>
+#### - With YARN
 
-```ts
-//index.js
+```bash
+yarn add @imjxsx/ln
+```
 
-import Ln from "ln";
+---
+
+### 🚀 Example of Use
+
+```javascript
+// index.js
+import Ln from "@imjxsx/ln";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -37,33 +40,22 @@ const ln = new Ln({
   default: "es",
   directory: path.join(dirname, "locales"),
 });
-
 // Load all locales
 await ln.load();
-
 // Example translations
-console.log(ln.t("hello.world", "es")); 
-// -> "Hola Mundo!"
-
+console.log(ln.t("hello.world", "es")); // "Hola Mundo!"
 console.log(ln.t("welcome.user", "es", {
   user: "ImJxsx",
   place: "GitHub",
-})); 
-// -> "Hola ImJxsx, bienvenido a GitHub."
+})); // "Hola ImJxsx, bienvenido a GitHub."
 ```
-```txt
-#locales/es.lang
 
+```txt
+# locales/es.lang
 hello.world=Hola Mundo!
 welcome.user=Hola %user%, bienvenido a %place%.
 ```
 
-<h2>🔷 Features</h2>
-<ul>
-  <li>Lightweight & easy i18n system</li>
-  <li>Customizable default locale</li>
-  <li>Simple file format (<code>key=value</code>)</li>
-  <li>Placeholder replacement (<code>%var%</code>)</li>
-  <li>Fallback to default locale if key not found</li>
-  <li>Logger support for debugging</li>
-</ul>
+---
+
+Developed with **❤** by **[imjxsx](https://github.com/imjxsx)**

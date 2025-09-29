@@ -1,21 +1,42 @@
 {
-  "name": "ln",
-  "description": "",
-  "version": "1.0.0",
+  "name": "@imjxsx/ln",
+  "version": "1.0.2",
+  "description": "A simple and lightweight multilingual (i18n) system built with TypeScript",
   "type": "module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "multilingual",
+    "javascript",
+    "typescript",
+    "nodejs",
+    "ln"
+  ],
   "author": "imjxsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imjxsx/ln.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imjxsx/ln/issues"
+  },
+  "homepage": "https://github.com/imjxsx/ln#readme",
   "packageManager": "pnpm@10.17.1",
   "devDependencies": {
     "@types/node": "20.0.0",
-    "tsx": "4.20.5",
+    "tsx": "4.20.6",
     "typescript": "5.9.2"
   },
   "dependencies": {
-    "logger": "github:imjxsx/logger"
-  },
-  "scripts": {
-    "build": "tsc"
+    "@imjxsx/logger": "1.0.3"
   }
 }
